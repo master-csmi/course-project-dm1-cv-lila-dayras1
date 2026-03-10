@@ -1,0 +1,199 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Lila Dayras}
+\date{January 2026}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Lila}{Dayras}{Etudiante en master CSMI ( Calcul Scientifique et Mathématiques de l'Innovation) ( 1ère année)}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{myphoto.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{A propos }\\[0.5em]
+
+Etudiante en première année de Master CSMI, j'ai déjà complété un master en mathématiques fondamentales. Mon expérience en tant qu'enseignante de même que mon parcours d'études m'ont permis de 
+développer ma rigueur, mon organisation de même que ma capacité à travailler en équipe.
+\bigskip
+
+\bg{cvgreen}{white}{personel} \\[0.5em]
+Lila Dayras
+
+Nationalitée: Française
+
+1999
+
+\bigskip
+
+\bg{cvgreen}{white}{Domaines de spécialisation} \\[0.5em]
+
+Calcul scientifique ~.~ Mathématiques fondamentales et appliquées
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{cvgreen}{white}{Interêts}\\[0.5em]
+
+Running ~.~ Arts du fil ~.~ Lecture
+
+\bigskip
+
+
+\vspace{4em}
+
+
+\infobubble{\faGithub}{cvgreen}{white}{lila-dayras1}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Resumé}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2025--}{Etudiante en master CSMI }{}{Strasbourg \color{cvred}}{ Master en mathématiques appliquées spécialisé en Modélisation, Simulation, Optimisation, HPC, data mining, traitement du signal et IA.}{blank.png} \\
+    \cvevent{2020--2023}{Etudiante en master de mathématiques fondamentales}{}{Strasbourg \color{cvred}}{Obtention d'un master en mathématiques fondamentales et de l'agrégation de mathématiques.}{blank.png}
+\end{tabular}
+\vspace{3em}
+
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Diplômes}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2023}{Agrégation de mathématiques}{Certification}{UFR Math-info Université de Strasbourg \color{headerblue}}{}{blank.png}\\
+    \cvdegree{2022}{Master préparation à l'agrégation}{Master}{UFR Math-info Université de Strasbourg \color{headerblue}}{}{blank.png} \\
+    \cvdegree{2021}{Première année de master mathématiques fondamentales}{M1}{UFR Math-info Université de Strasbourg \color{headerblue}}{}{blank.png} \\
+    \cvdegree{2020}{Licence de mathématiques fondamentales}{Licence}{UFR Math-info Université de Strasbourg \color{headerblue}}{} {blank.png}\\
+    \cvdegree{2018-2019}{CPGE (MPSI-MP*)}{}{Lycée Blaise Pascal Clermont Ferrand Université d'Auvergne \color{headerblue}}{}{blank.png} \\
+    \cvdegree{2017}{Baccalauréat Scientifique mention très bien avec félicitations du jury}{}{Lycée Blaise de Vigenère 03500 Saint Pourçain sur Sioule \color{headerblue}}{}{blank.png} \\
+
+
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Programmation}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX}   \\
+     \bg{skilllabelcolour}{iconcolour}{python}  \\
+
+
+     \bg{skilllabelcolour}{iconcolour}{C++} & \\
+     \bg{skilllabelcolour}{iconcolour}{MPI} &  \\
+     \bg{skilllabelcolour}{iconcolour}{Kokkos}  \\
+
+     \bg{skilllabelcolour}{iconcolour}{C} & {introduction} \\
+     \bg{skilllabelcolour}{iconcolour}{SQL, NoSQL, neo4j} & {introduction} \\
+
+\end{tabular}
+\end{minipage}
+
+\section*{Curriculum}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2025--}{Secrétaire Médicale}{}{Strasbourg \color{cvred}}{}{blank.png} \\
+    \cvevent{2024--}{Professeure particulier}{}{Strasbourg \color{cvred}}{Cours de soutien en mathématiques niveau licence}{blank.png} \\
+    \cvevent{2023--2024}{Professeur Agrégée de mathématiques}{}{Erstein et Rixheim \color{cvred}}{Enseignante de mathématiques en collège et lycée}{blank.png} \\
+    \cvevent{2021--2022}{Professeure particulier}{}{Strasbourg \color{cvred}}{Cours de soutien en mathématiques niveau lycée}{blank.png} \\
+    \cvevent{July 2020}{Secrétaire Médicale}{}{Strasbourg \color{cvred}}{}{blank.png} \\
+    \cvevent{2016--2017}{Professeure particulier}{}{Bayet \color{cvred}}{Cours de soutien niveau collège}{blank.png} \\
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Certifications}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+    2023 & Permis de conduire \\
+\end{tabular}
+\bigskip
+
+\section*{Langues}
+\begin{tabular}{l | ll}
+\textbf{Français} & C2 & {\phantom{x}\footnotesize langue maternelle} \\
+\textbf{Anglais} & C1 & \pictofraction{\faCircle}{cvgreen}{4}{black!30}{1}{\tiny} \\
+\textbf{Espagnol} & B2 & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{3}{\tiny} \\
+\textbf{Allemand} & A1 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{4}{\tiny} 
+
+
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Lila Dayras \icon{\faEnvelopeO}{cvgreen}{} 16 rue Saint Nicolas \icon{\faMapMarker}{cvgreen}{} Strasbourg \icon{\faPhone}{cvgreen}{} 0604420432 \newline\icon{\faAt}{cvgreen}{} \protect\url{dayras.lila.bcp@gmail.com}
+}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
